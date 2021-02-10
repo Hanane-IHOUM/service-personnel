@@ -78,7 +78,7 @@ public class MedecinService {
         Medecin medecin = medecinRepository.findById(medecinId).orElse(null);
 
         ServiceDep serviceDep =
-                restTemplate.getForObject("http://SERVICEDEP-SERVICE/service/" + medecin.getNomServiceDep()
+                restTemplate.getForObject("http://m-departements/departements/nom/" + medecin.getNomServiceDep()
                         ,ServiceDep.class);
         
         Compte compte =

@@ -2,46 +2,76 @@ package com.proj.vo;
 
 public class ServiceDep {
 
-	private Long serviceId;
-    private String serviceName;
-    private Long idDepartement;
+	private Long id;
+    private String reference;
+    private String nom;
+    private String etat;
 	
     public ServiceDep() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public ServiceDep(String serviceName, Long idDepartement) {
+	
+
+	public ServiceDep(String reference, String nom, String etat) {
 		super();
-		this.serviceName = serviceName;
-		this.idDepartement = idDepartement;
+		this.reference = reference;
+		this.nom = nom;
+		this.etat = etat;
 	}
 
-	public Long getServiceId() {
-		return serviceId;
+
+
+	public Long getId() {
+		return id;
 	}
 
-	public void setServiceId(Long serviceId) {
-		this.serviceId = serviceId;
+
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
-	public String getServiceName() {
-		return serviceName;
+
+
+	public String getReference() {
+		return reference;
 	}
 
-	public void setServiceName(String serviceName) {
-		this.serviceName = serviceName;
+
+
+	public void setReference(String reference) {
+		this.reference = reference;
 	}
 
-	public Long getIdDepartement() {
-		return idDepartement;
+
+
+	public String getNom() {
+		return nom;
 	}
 
-	public void setIdDepartement(Long idDepartement) {
-		this.idDepartement = idDepartement;
+
+
+	public void setNom(String nom) {
+		this.nom = nom;
 	}
-    
-    
+
+
+
+	public String getEtat() {
+		return etat;
+	}
+
+
+
+	public void setEtat(String etat) {
+		this.etat = etat;
+	}
+
+
+
+	
 	
     
 }
